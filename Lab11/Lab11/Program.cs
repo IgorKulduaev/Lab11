@@ -8,7 +8,7 @@ int kurs = int.Parse(Console.ReadLine()!);
 Student kabel1 = new Student(surname, midball, kurs);
 Console.WriteLine(kabel1);
 Console.WriteLine(kabel1.GetHashCode());
-Console.Write("Есть английский язык присутствует? 1-да, 2-нет: ");
+Console.Write("английский язык присутствует? 1-да, 2-нет: ");
 bool eng = (int.Parse(Console.ReadLine()!) == 1 ? true : false);
 
 engStudent kabel2 = new engStudent(surname, midball, kurs, eng);
@@ -79,3 +79,4 @@ class engStudent : Student
             $" курсом {Kurs} имеет качество:{Quality():F2}";
     }
 }
+
